@@ -1,12 +1,12 @@
 {
   "salonInfo": {
-    "name": "Toppers Grand Unisex Salon",
+    "name": "J Studio Luxury Beauty Salon",
     "tagline": "Premier Hair Styling, Luxury Spa & Bridal Studio",
     "address": "MVP Sector 3, Near Mahatma Gandhi Cancer Hospital, MVP Colony, Visakhapatnam, Andhra Pradesh 530017",
     "phone": "+91 90660 31999",
     "altPhone": "+91 891 250 8899",
     "whatsapp": "+91 90660 31999",
-    "email": "toppersgrandsalon@gmail.com",
+    "email": "jstudioluxurybeauty@gmail.com",
     "operatingHours": "Monday - Sunday: 8:00 AM – 9:00 PM",
     "rating": 4.8,
     "totalReviews": 485,
@@ -14,7 +14,7 @@
       "lat": 17.744141,
       "lng": 83.333954
     },
-    "mapUrl": "https://www.google.com/maps/place/Toppers+Grand+Unisex+Salon/@17.744141,83.2639162,13271m/data=!3m1!1e3!4m11!1m3!2m2!1ssaloon+in+vizag!6e1!3m6!1s0x3a39433d0ec9b60d:0x29dc8094c9350270!8m2!3d17.744141!4d83.333954",
+    "mapUrl": "https://maps.google.com/?q=J+Studio+Luxury+Beauty+Salon+Vizag",
     "amenities": [
       "L'Oréal Professionnel Partner",
       "100% Sanitized & Hospital-Grade Hygiene",
@@ -30,7 +30,7 @@
     {
       "id": "user-1",
       "username": "admin",
-      "passwordHash": "$2b$10$5I3WU7d.uV20wlBkAfIF/OYpafMoxergMHZosTKTfPj9Crxt41jvK",
+      "passwordHash": "$2b$10$R7M0PSCQWxb.Fazx2FI92u0/NpnXi50j/lKshwdDowylEXAbP5z0G",
       "name": "Salon Manager",
       "role": "admin",
       "createdAt": "2026-10-12T05:24:50.496Z"
@@ -335,7 +335,7 @@
     },
     {
       "id": "off-2",
-      "code": "TOPPERSGROOM",
+      "code": "JSTUDIOGROOM",
       "title": "Executive Grooming Bundle",
       "discountPercent": 25,
       "description": "Get 25% off when you book Men's Haircut + Beard Sculpting + D-Tan Face Pack.",
@@ -372,7 +372,7 @@
       "rating": 5,
       "date": "1 month ago",
       "source": "Google Review",
-      "text": "I booked my bridal makeover here with Ananya. She is truly magical! My HD makeup stayed flawless throughout the 6-hour ceremony in Vizag humidity. Everyone praised my look. Highly recommend Toppers Grand!",
+      "text": "I booked my bridal makeover here with Ananya. She is truly magical! My HD makeup stayed flawless throughout the 6-hour ceremony in Vizag humidity. Everyone praised my look. Highly recommend J Studio Luxury Beauty Salon!",
       "serviceTaken": "HD Bridal Makeover",
       "verified": true,
       "featured": true

@@ -8,7 +8,7 @@ const SEED_DB_FILE = path.join(BUNDLED_DATA_DIR, 'db.json');
 
 function resolveWritableDataDir() {
   if (process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME) {
-    return path.join(os.tmpdir(), 'toppers-grand-salon-data');
+    return path.join(os.tmpdir(), 'jstudio-luxury-salon-data');
   }
   try {
     if (!fs.existsSync(BUNDLED_DATA_DIR)) {
@@ -19,7 +19,7 @@ function resolveWritableDataDir() {
     fs.unlinkSync(probeFile);
     return BUNDLED_DATA_DIR;
   } catch (err) {
-    return path.join(os.tmpdir(), 'toppers-grand-salon-data');
+    return path.join(os.tmpdir(), 'jstudio-luxury-salon-data');
   }
 }
 
@@ -39,20 +39,20 @@ try {
   console.error('Directory initialization warning:', err.message);
 }
 
-// Initial seed data reflecting Toppers Grand Unisex Salon in MVP Colony, Vizag
+// Initial seed data reflecting J Studio Luxury Beauty Salon in MVP Colony, Vizag
 function getInitialData() {
   const salt = bcrypt.genSaltSync(10);
-  const adminPasswordHash = bcrypt.hashSync('toppers@2026', salt);
+  const adminPasswordHash = bcrypt.hashSync('jstudio@2026', salt);
 
   return {
     salonInfo: {
-      name: "Toppers Grand Unisex Salon",
+      name: "J Studio Luxury Beauty Salon",
       tagline: "Premier Hair Styling, Luxury Spa & Bridal Studio",
       address: "MVP Sector 3, Near Mahatma Gandhi Cancer Hospital, MVP Colony, Visakhapatnam, Andhra Pradesh 530017",
       phone: "+91 90660 31999",
       altPhone: "+91 891 250 8899",
       whatsapp: "+91 90660 31999",
-      email: "toppersgrandsalon@gmail.com",
+      email: "jstudioluxurybeauty@gmail.com",
       operatingHours: "Monday - Sunday: 8:00 AM – 9:00 PM",
       rating: 4.8,
       totalReviews: 485,
@@ -60,7 +60,7 @@ function getInitialData() {
         lat: 17.744141,
         lng: 83.333954
       },
-      mapUrl: "https://www.google.com/maps/place/Toppers+Grand+Unisex+Salon/@17.744141,83.2639162,13271m/data=!3m1!1e3!4m11!1m3!2m2!1ssaloon+in+vizag!6e1!3m6!1s0x3a39433d0ec9b60d:0x29dc8094c9350270!8m2!3d17.744141!4d83.333954",
+      mapUrl: "https://maps.google.com/?q=J+Studio+Luxury+Beauty+Salon+Vizag",
       amenities: [
         "L'Oréal Professionnel Partner",
         "100% Sanitized & Hospital-Grade Hygiene",
@@ -362,7 +362,7 @@ function getInitialData() {
       },
       {
         id: "off-2",
-        code: "TOPPERSGROOM",
+        code: "JSTUDIOGROOM",
         title: "Executive Grooming Bundle",
         discountPercent: 25,
         description: "Get 25% off when you book Men's Haircut + Beard Sculpting + D-Tan Face Pack.",
@@ -399,7 +399,7 @@ function getInitialData() {
         rating: 5,
         date: "1 month ago",
         source: "Google Review",
-        text: "I booked my bridal makeover here with Ananya. She is truly magical! My HD makeup stayed flawless throughout the 6-hour ceremony in Vizag humidity. Everyone praised my look. Highly recommend Toppers Grand!",
+        text: "I booked my bridal makeover here with Ananya. She is truly magical! My HD makeup stayed flawless throughout the 6-hour ceremony in Vizag humidity. Everyone praised my look. Highly recommend J Studio Luxury Beauty Salon!",
         serviceTaken: "HD Bridal Makeover",
         verified: true,
         featured: true
@@ -708,7 +708,7 @@ class DB {
     if (!data.bookings) data.bookings = [];
     const randomCode = Math.floor(1000 + Math.random() * 9000);
     const datePrefix = new Date().toISOString().slice(0, 10).replace(/-/g, '');
-    const bookingId = bookingData.id || `TG-${datePrefix}-${randomCode}`;
+    const bookingId = bookingData.id || `JS-${datePrefix}-${randomCode}`;
 
     const existingIdx = data.bookings.findIndex(b => b.id.toLowerCase() === bookingId.toLowerCase());
     if (existingIdx !== -1) {

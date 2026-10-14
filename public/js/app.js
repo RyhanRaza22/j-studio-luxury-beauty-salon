@@ -1,5 +1,5 @@
 // ===================================================================
-// TOPPERS GRAND UNISEX SALON - CLIENT APP LOGIC
+// J STUDIO LUXURY BEAUTY SALON - CLIENT APP LOGIC
 // MVP Colony, Visakhapatnam
 // ===================================================================
 
@@ -71,10 +71,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // ==========================================
   // BOOKING SYNC HELPER (Serverless Resilience)
   // ==========================================
-  const SYNC_STORAGE_KEY = 'toppers_booking_sync_v1';
+  const SYNC_STORAGE_KEY = 'jstudio_booking_sync_v1';
   function getSyncState() {
     try {
-      const raw = localStorage.getItem(SYNC_STORAGE_KEY);
+      const raw = localStorage.getItem(SYNC_STORAGE_KEY) || localStorage.getItem('toppers_booking_sync_v1');
       if (raw) {
         const parsed = JSON.parse(raw);
         return {
@@ -705,7 +705,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Setup WhatsApp direct share
     if (btnWhatsAppConfirm) {
       const msg = encodeURIComponent(
-        `Hello Toppers Grand Unisex Salon! I have booked an appointment.\n\n` +
+        `Hello J Studio Luxury Beauty Salon! I have booked an appointment.\n\n` +
         `🔖 Booking ID: ${booking.id}\n` +
         `👤 Name: ${booking.customerName}\n` +
         `📅 Date: ${booking.date} at ${booking.timeSlot}\n` +
@@ -786,7 +786,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <img src="${item.image}" alt="${item.title}" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80';">
             <div class="gallery-overlay">
               <h4>${item.title}</h4>
-              <span style="color: var(--gold-light); font-size: 0.75rem; text-transform: uppercase;">Toppers Grand Vizag</span>
+              <span style="color: var(--gold-light); font-size: 0.75rem; text-transform: uppercase;">J Studio Vizag</span>
             </div>
           </div>
         `).join('');
