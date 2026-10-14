@@ -715,7 +715,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `Please confirm my reservation.`
       );
       btnWhatsAppConfirm.onclick = () => {
-        window.open(`https://wa.me/919066031999?text=${msg}`, '_blank');
+        window.open(`https://wa.me/919882689999?text=${msg}`, '_blank');
       };
     }
   }

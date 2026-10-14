@@ -8,8 +8,8 @@ A full-stack, responsive website and administrative suite built for **J Studio L
 - **Business Name:** J Studio Luxury Beauty Salon
 - **Coordinates:** `17.744141, 83.333954`
 - **Location:** MVP Sector 3, Near Mahatma Gandhi Cancer Hospital, MVP Colony, Visakhapatnam, Andhra Pradesh 530017
-- **Phone:** `+91 90660 31999` / `+91 891 250 8899`
-- **WhatsApp:** `+91 90660 31999`
+- **Phone:** `+91 98826 89999` / `+91 891 250 8899`
+- **WhatsApp:** `+91 98826 89999`
 - **Hours:** Monday – Sunday: 8:00 AM – 9:00 PM (Open 7 Days a Week)
 - **Google Rating:** 4.8 / 5.0 (485+ Verified Google Reviews)
 - **Key Specialties:** L'Oréal Professionnel Partner Salon, Precision Men's Grooming, Balayage & Hair Botox, HydraFacials, and HD & Airbrush Bridal Studio.
@@ -48,7 +48,7 @@ The server will boot up at:
 - **Booking Tracker:** Allows clients to track their appointment status anytime by entering their Booking ID.
 - **Interactive Google Maps Embed:** Centered on MVP Colony coordinates (`17.744141, 83.333954`) with 1-click "Get Directions" link.
 - **Verified Google Reviews & Feedback Modal:** Displays authentic reviews and allows visitors to submit new ratings.
-- **Floating Action Buttons:** Quick 1-click WhatsApp chat (`https://wa.me/919066031999`) and direct phone call.
+- **Floating Action Buttons:** Quick 1-click WhatsApp chat (`https://wa.me/919882689999`) and direct phone call.
 - **Mobile Responsive Layout:** Designed for smartphones, tablets, laptops, and ultra-wide desktops.
 
 ---
